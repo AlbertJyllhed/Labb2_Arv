@@ -2,37 +2,11 @@
 {
     internal class Vehicle
     {
-        string _brand = "Unknown";
-        string _model = "Unknown";
-        int _year = DateTime.Now.Year;
-        double _weight = 10;
-        double _speed = 30;
-
-        protected string Brand
-        {
-            get { return _brand; }
-            set { _brand = value; }
-        }
-        protected string Model
-        {
-            get { return _model; }
-            set { _model = value; }
-        }
-        protected int Year
-        {
-            get { return _year; }
-            set { _year = value; }
-        }
-        protected double Weight
-        {
-            get { return _weight; }
-            set { _weight = value; }
-        }
-        protected double Speed
-        {
-            get { return _speed; }
-            set { _speed = value; }
-        }
+        protected string Brand { get; set; } = "Unknown";
+        protected string Model { get; set; } = "Unknown";
+        protected int Year { get; set; } = DateTime.Now.Year;
+        protected double Weight { get; set; } = 10;
+        protected double Speed { get; set; } = 30;
 
         //default constructor for setting all properties
         public Vehicle(string brand, string model, int year, double weight, double speed)

@@ -4,23 +4,12 @@ namespace Labb2_Arv
 {
     internal class Car : Vehicle
     {
-        int _doorAmount = 4;
-
-        protected int DoorAmount
-        {
-            get { return _doorAmount; }
-            set { _doorAmount = value; }
-        }
+        protected int DoorAmount { get; set; } = 4;
 
         //default constructor for setting all properties
         public Car(string brand, string model, int year, double weight, double speed, int doorAmount) : 
             base(brand, model, year, weight, speed)
         {
-            Brand = brand;
-            Model = model;
-            Year = year;
-            Weight = weight;
-            Speed = speed;
             DoorAmount = doorAmount;
         }
 

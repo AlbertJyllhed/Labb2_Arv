@@ -2,23 +2,12 @@
 {
     internal class Bicycle : Vehicle
     {
-        int _wheelAmount = 2;
-
-        protected int WheelAmount
-        {
-            get { return _wheelAmount; }
-            set { _wheelAmount = value; }
-        }
+        protected int WheelAmount { get; set; } = 2;
 
         //default constructor for setting all properties
         public Bicycle(string brand, string model, int year, double weight, double speed, int wheelAmount) : 
             base(brand, model, year, weight, speed)
         {
-            Brand = brand;
-            Model = model;
-            Year = year;
-            Weight = weight;
-            Speed = speed;
             WheelAmount = wheelAmount;
         }
 
